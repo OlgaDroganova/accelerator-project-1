@@ -1,0 +1,44 @@
+.footer {
+  background: #030a1a;
+}
+
+.footer__menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__menu-item {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.footer__social-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__social-item {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+.footer__social-vk {
+  margin: auto;
+}
+
+.footer__social-ok {
+  margin: auto;
+  width: 10px;
+  height: 17px;
+}
+
+.footer__social-raddit {
+  margin: auto;
+  width: 15px;
+  height: 15px;
+}

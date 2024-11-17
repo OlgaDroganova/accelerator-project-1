@@ -1,0 +1,46 @@
+.offers__block {
+  background: #ed0233;
+}
+
+.offers__block-one {
+  margin: 15px 25px;
+  background-image: url("../../img/girl-img-m@1x.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.offers__title {
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.offers__year {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.offers__price {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 164px;
+  color: #ffffff;
+}
+
+.offers__description {
+  line-height: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.offers__button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}

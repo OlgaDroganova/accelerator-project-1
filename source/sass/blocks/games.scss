@@ -1,0 +1,47 @@
+.games__container {
+  background: #ed0233;
+  margin: 15px 25px;
+  background-image: url("../../img/foto-games-m@1x.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.games-title {
+  font-size: 48px;
+  line-height: 54px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.games-text,
+.games-description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.games-time {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.games-month {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #ffffff;
+}
+
+.games-button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: 1px solid greenyellow;
+  padding: 22px 40px;
+}

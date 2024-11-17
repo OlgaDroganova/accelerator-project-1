@@ -2,3 +2,28 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
+// Common
+// ---------------------------------
+
+@import "common/variables";
+@import "common/mixins";
+@import "common/fonts";
+@import "common/global";
+@import "common/visually-hidden";
+
+// Blocks
+// ---------------------------------
+@import "blocks/container";
+@import "blocks/hero";
+@import "block/phone";
+@import "blocks/price";
+@import "blocks/games";
+@import "blocks/juri";
+@import "blocks/features";
+@import "blocks/offers";
+@import "blocks/card";
+@import "blocks/faq";
+@import "blocks/reviews";
+@import "blocks/form";
+@import "blocks/footer";

@@ -5,38 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUPERGYM</title>
+
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="./fonts/AlumniSans-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/RobotoCondensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/RobotoCondensed-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/RobotoCondensed-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="sass/style.scss">
+
 </head>
 
 <body class="page-body">
   <main class="main-container">
     <section class="hero" data-test="hero">
-      <div class="hero-header">
+      <div class="hero-header container">
         <div class="hero-header__logo-wrapper container">
           <div class="hero-header__logo">
             <img src="/__spritemap#sprite-logo-view" alt="Логотип SUPERGYM" width="100" height="20">
           </div>
-          <div>
+          <div class="hero-header__phone phone">
             <span class="visually-hidden">Телефон горячей линии</span>
-            <a class="header-phone" href="tel:8800555-55-55">8 800 555-55-55</a>
+            <a class="phone" href="tel:8800555-55-55">8 800 555-55-55</a>
           </div>
         </div>
       </div>
       <div class="hero-container container">
         <h1 class="hero-title">Фитнес центр</h1>
-        <p class="hero-town">Омск</p>
+        <span class="hero-town">Омск</span>
         <ul class="hero-list">
           <li class="hero-item">Тренажёрный зал</li>
           <li class="hero-item">Групповые занятия</li>
           <li class="hero-item">Кардио-зона</li>
         </ul>
-        <!-- изображение фоновое -->
-        <picture>
-          <img src="img/hero-img@1x.jpg" srcset="img/hero-img@2x.jpg" width="500" height="524" alt="человек SUPERGYM">
-        </picture>
         <a class="hero-button button" href="#subscription">Купить абонемент</a>
       </div>
     </section>
@@ -52,7 +56,7 @@
           <source type="image/jpeg" media="(min-width: 768px)" srcset="img/main-img-tab@1x.jpg, img/main-img-tab@2x.jpg 2x" width="678" height="345">
           <img src="img/main-img-m@1x.jpg" srcset="img/main-img-m@2x.jpg" width="320" height="280" alt="Тренажёрный зал">
         </picture>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw?si=nSSL8qISxu2v_u6B" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="about-container__video" width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw?si=nSSL8qISxu2v_u6B" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </section>
     <section class="price price-period" data-test="price" id="subscription">
@@ -66,18 +70,21 @@
                 <h3 class="price-title">С тренером</h3>
                 <p class="price-description">12 занятий</p>
                 <span class="price-item__rubl">5000</span>
+                <span class="price-item__shadow" aria-hidden="true">5000</span>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
               <li class="price-item">
                 <h3 class="price-title">Дневной</h3>
                 <p class="price-description">с 8:00 до 17:00</p>
                 <span class="price-item__rubl">1700</span>
+                <span class="price-item__shadow" aria-hidden="true">1700</span>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
               <li class="price-item">
                 <h3 class="price-title">Полный день</h3>
                 <p class="price-description">с 8:00 до 22:00</p>
                 <span class="price-item__rubl">2700</span>
+                <span class="price-item__shadow" aria-hidden="true">2700</span>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
             </ul>
@@ -87,20 +94,23 @@
             <ul class="price-list">
               <li class="price-item">
                 <h3 class="price-title">С тренером</h3>
-                <p class="price-description">72 занятия</p>
+                <p class="price-description">12 занятия</p>
                 <span class="price-item__rubl">30000</span>
+                <span class="price-item__shadow" aria-hidden="true">30000</span>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
               <li class="price-item">
                 <h3 class="price-title">Дневной</h3>
                 <p class="price-description">с 8:00 до 17:00</p>
                 <span class="price-item__rubl">10200</span>
+                <span class="price-item__shadow" aria-hidden="true">10200</span>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
               <li class="price-item">
                 <h3 class="price-title">Полный день</h3>
                 <p class="price-description">с 8:00 до 22:00</p>
                 <span class="price-item__rubl">16200</span>
+                <span class="price-item__shadow" aria-hidden="true">16200</span>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
             </ul>
@@ -110,20 +120,23 @@
             <ul class="price-list">
               <li class="price-item">
                 <h3 class="price-title">С тренером</h3>
-                <p class="price-description">144 занятия</p>
+                <p class="price-description">12 занятия</p>
                 <span class="price-item__rubl">60000</span>
+                <span class="price-item__shadow" aria-hidden="true">60000</span>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
               <li class="price-item">
                 <h3 class="price-title">Дневной</h3>
                 <p class="price-description">с 8:00 до 17:00</p>
                 <span class="price-item__rubl">20400</span>
+                <span class="price-item__shadow" aria-hidden="true">20400</span>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
               <li class="price-item">
                 <h3 class="price-title">Полный день</h3>
                 <p class="price-description">с 8:00 до 22:00</p>
                 <span class="price-item__rubl">32400</span>
+                <span class="price-item__shadow" aria-hidden="true">32400</span>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
             </ul>
@@ -132,21 +145,19 @@
       </div>
     </section>
     <section class="games" data-test="games">
-      <div class="games__container container">
-        <h2 class="games-title">SUPER GAMES</h2>
-        <div class="games-info">
-          <p class="games-text">Дата</p>
-          <p class="games-time">7</p>
-          <p class="games-month">Марта 2019</p>
-          <p class="games-text">Время</p>
-          <p class="games-time">12:00</p>
+      <div class="container">
+        <div class="games__container">
+          <h2 class="games-title">SUPER GAMES</h2>
+          <div class="games-info">
+            <p class="games-text">Дата</p>
+            <p class="games-time">7</p>
+            <p class="games-month">Марта 2019</p>
+            <p class="games-text">Время</p>
+            <p class="games-time">12:00</p>
+          </div>
+          <p class="games-description">Ежегодные соревнования по CrossFit</p>
+          <a class="games-button button" href="#">заполнить заявку</a>
         </div>
-        <p class="games-description">Ежегодные соревнования по CrossFit</p>
-        <a class="games-button button" href="#">заполнить заявку</a>
-        <!--  картинка декоративная, перенести в CSS -->
-        <picture>
-          <img src="img/foto-games-m@1x.jpg" srcset="img/foto-games-m@2x.jpg" width="290" height="290" alt="человек SUPERGYM">
-        </picture>
       </div>
     </section>
     <section class="juri" data-test="juri">
@@ -179,7 +190,7 @@
               <p class="juri-name">Мария Кетова</p>
               <picture>
                 <source type="image/webp" srcset="img/card-mari@1x.webp, img/card-mari@2x.webp 2x" width="260" height="300">
-                <img class="juri-card" src="img/card-mari@1x.jpg" srcset="img/card-mari@2x.jpg" width="260" height="300" alt="Мария Кетова">
+                <img class="juri-member" src="img/card-mari@1x.jpg" srcset="img/card-mari@2x.jpg" width="260" height="300" alt="Мария Кетова">
               </picture>
             </div>
           </div>
@@ -193,30 +204,30 @@
         <h2 class="features__title">Наши преимущества</h2>
         <ul class="features__list">
           <li class="features__item">
-            <span class="item-text">900</span>
+            <span class="item-number">900</span>
             <p class="item-text">кв/м</p>
             <h3 class="item-title">Площадь</h3>
             <p class="item-text">Занимайтесь без очередей и толкучки</p>
           </li>
           <li class="features__item">
-            <span class="item-text">70</span>
+            <span class="item-number">70</span>
             <p class="item-text">машин</p>
             <h3 class="item-title">Собственная парковка</h3>
             <p class="item-text">Вы всегда найдёте место для своей машины на нашей парковке</p>
           </li>
           <li class="features__item">
-            <span class="item-text">100</span>
+            <span class="item-number">100</span>
             <h3 class="item-title">Тренажёров</h3>
             <p class="item-text">Современные тренажёры на все группы мышц</p>
           </li>
           <li class="features__item">
-            <span class="item-text">350</span>
+            <span class="item-number">350</span>
             <p class="item-text">мест</p>
             <h3 class="item-title">Комфорт</h3>
             <p class="item-text">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
           </li>
           <li class="features__item">
-            <span class="item-text">5+</span>
+            <span class="item-number">5+</span>
             <p class="item-text">лет</p>
             <h3 class="item-title">Тренерский опыт</h3>
             <p class="item-text">Добивайтесь своих целей быстрее с профессиональным тренером</p>
@@ -225,27 +236,25 @@
       </div>
     </section>
     <section class="offers" data-test="offers">
-      <div class="offers__container container">
-        <h2 class="offers__title">Акции</h2>
-        <div class="offers__container">
-          <p class="offers__year">Год</p>
-          <p class="offers__price">4999</p>
-          <p class="offers__description">Безлимитный абонемент в тренажёрный зал</p>
-          <a class="offers__button" href="#">подробнее</a>
+      <div class="offers__container">
+        <h2 class="offers__title container">Акции</h2>
+        <div class="offers__block">
+          <div class="offers__block-one container">
+            <p class="offers__year">Год</p>
+            <p class="offers__price">4999</p>
+            <p class="offers__description">Безлимитный абонемент в тренажёрный зал</p>
+            <a class="offers__button" href="#">подробнее</a>
+          </div>
         </div>
-        <!--  картинка декоративная, перенести в CSS -->
-        <picture>
-          <img src="img/girl-img@1x.jpg" srcset="img/girl-img@2x.jpg" width="320" height="360" alt="девушка">
-        </picture>
-        <div class="offers__card">
-          <span class="offers__title">Месяц бесплатно</span>
-          <p class="offers__text">Приведи друга, получи абонемент в подарок</p>
-          <a class="offers__button" href="#">подробнее</a>
+        <div class="offers__card card container">
+          <span class="card__title">Месяц бесплатно</span>
+          <p class="card__text">Приведи друга, получи абонемент в подарок</p>
+          <a class="card__button" href="#">подробнее</a>
         </div>
-        <div class="offers__card">
-          <span class="offers__title">Скидка 20%</span>
-          <p class="offers__text">Корпоративный фитнес с командой</p>
-          <a class="offers__button" href="#">подробнее</a>
+        <div class="offers__card card container">
+          <span class="card__title">Скидка 20%</span>
+          <p class="card__text">Корпоративный фитнес с командой</p>
+          <a class="card__button" href="#">подробнее</a>
         </div>
       </div>
     </section>
@@ -254,83 +263,83 @@
         <h2>Вопросы и ответы</h2>
         <ul class="faq__list">
           <li class="faq__item">
-            <button class="faq__tab" onclick="openList(event, 'Center')" type="button">Центр</button>
+            <button class="faq__tab" onclick="openList(event, 'center')" type="button">Центр</button>
           </li>
           <li class="faq__item">
-            <button class="faq__tab" onclick="openList(event, 'Subscription')" type="button">Абонемент</button>
+            <button class="faq__tab" onclick="openList(event, 'subscriptions')" type="button">Абонемент</button>
           </li>
           <li class="faq__item">
-            <button class="faq__tab" onclick="openList(event, 'Services')" type="button">Услуги</button>
+            <button class="faq__tab" onclick="openList(event, 'services')" type="button">Услуги</button>
           </li>
           <li class="faq__item">
-            <button class="faq__tab" onclick="openList(event, 'Rules')" type="button">Правила</button>
+            <button class="faq__tab" onclick="openList(event, 'rules')" type="button">Правила</button>
           </li>
         </ul>
-        <ul class="faq__content" id="Center">
-          <li>
+        <ul class="faq__content-list" id="center">
+          <li class="faq__content-item">
             <h3>Как стать членом фитнес-центра?</h3>
             <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
           </li>
-          <li>
+          <li class="faq__content-item">
             <h3>Где можно посмотреть расписание?</h3>
             <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
           </li>
-          <li>
+          <li class="faq__content-item">
             <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
           </li>
-          <li>
+          <li class="faq__content-item">
             <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
           </li>
         </ul>
-        <div class="faq__content" id="Subscription">
-          <ul>
-            <li>
+        <div>
+          <ul class="faq__content-list" id="subscriptions">
+            <li class="faq__content-item">
               <h3>Занятия с тренером входят в абонемент?</h3>
               <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
             </li>
-            <li>
+            <li class="faq__content-item">
               <h3>Можно ли заморозить абонемент?</h3>
             </li>
-            <li>
+            <li class="faq__content-item">
               <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
             </li>
-            <li>
+            <li class="faq__content-item">
               <h3>Что такое семейный доступ и доступ для друзей?</h3>
             </li>
           </ul>
         </div>
-        <div class="faq__content" id="Services">
-          <ul>
-            <li>
+        <div>
+          <ul class="faq__content-list" id="services">
+            <li class="faq__content-item">
               <h3>Предлагает ли клуб услуги
                 по консультированию
                 по вопросам питания?</h3>
               <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
             </li>
-            <li>
+            <li class="faq__content-item">
               <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
             </li>
-            <li>
+            <li class="faq__content-item">
               <h3>Можно ли приобрести в центре спортивное питание?</h3>
             </li>
-            <li>
+            <li class="faq__content-item">
               <h3>Есть ли в центре детская комната?</h3>
             </li>
           </ul>
         </div>
-        <div class="faq__content" id="Rules">
-          <ul>
-            <li>
+        <div>
+          <ul class="faq__content-list" id="rules">
+            <li class="faq__content-item">
               <h3>Есть в фитнес-центре дресс-код?</h3>
-              <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+              <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
             </li>
-            <li>
+            <li class="faq__content-item">
               <h3>Можно ли приводить с собой детей на тренировки?</h3>
             </li>
-            <li>
+            <li class="faq__content-item">
               <h3>Какие дополнительные правила посещения центра?</h3>
             </li>
-            <li>
+            <li class="faq__content-item">
               <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
             </li>
           </ul>
@@ -341,7 +350,7 @@
       <div class="reviews__container container">
         <h2>Отзывы</h2>
         <div class="reviews__block">
-          <span>Анна Орлова</span>
+          <span class="reviews__user">Анна Орлова</span>
           <picture>
             <source type="image/webp" media="(min-width: 768px)" srcset="img/avatar-user@1x.webp, img/avatar-user@2x.webp 2x" width="80" height="80">
             <source type="image/jpeg" media="(min-width: 768px)" srcset="img/avatar-user@1x.jpg, img/avatar-user@2x.jpg 2x" width="80" height="80">
@@ -352,41 +361,45 @@
       </div>
     </section>
     <section class="form" data-test="form">
-      <div class="form__container container">
-        <h2 class="form__title">Бесплатное занятие</h2>
-        <form class="form__details" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__filter">
-            <legend class="visually-hidden">Данные пользователя</legend>
-            <ul class="form__list">
-              <li class="form__item">
-                <label class="visually-hidden" for="name">Имя</label>
-                <input class="form__input" name="name" id="name" placeholder="Имя" type="text" required>
-              </li>
-              <li class="form__item">
-                <label class="visually-hidden" for="telephon">Телефон</label>
-                <input class="form__input" name="telephon" id="telephon" placeholder="Телефон" type="number" required>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="form__button" type="submit">отправить</button>
-        </form>
+      <div class="form__block">
+        <div class=" container">
+          <h2 class="form__title">Бесплатное занятие</h2>
+          <form class="form__details" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="form__filter">
+              <legend class="visually-hidden">Данные пользователя</legend>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="visually-hidden" for="name">Имя</label>
+                  <input class="form__input" name="name" id="name" placeholder="Имя" type="text" required>
+                </li>
+                <li class="form__item">
+                  <label class="visually-hidden" for="telephon">Телефон</label>
+                  <input class="form__input" name="telephon" id="telephon" placeholder="Телефон" type="number" required>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="form__button" type="submit">отправить</button>
+          </form>
+        </div>
+      </div>
+      <div class="form__container  container">
         <h2>Контакты</h2>
-        <ul class="form__contact">
-          <li>
+        <ul class="form__contact-list">
+          <li class="form__contact-item">
             <h3>Адрес:</h3>
-            <address>г. Омск, ул. 60 лет Октября, 7</address>
+            <address class="form__contact-address">г. Омск, ул. 60 лет Октября, 7</address>
           </li>
-          <li>
+          <li class="form__contact-item">
             <h3>График работы:</h3>
             <p>Пн-Вс: с 8:00 до 22:00</p>
           </li>
-          <li>
+          <li class="form__contact-item">
             <h3>Телефон:</h3>
             <p>8 800 555-55-55</p>
           </li>
-          <li>
+          <li class="form__contact-item">
             <h3>Email:</h3>
-            <p>oмск@supergym.ru</p>
+            <a href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
           </li>
         </ul>
       </div>
@@ -399,31 +412,31 @@
       </div>
       <ul class="footer__menu-list">
         <li class="footer__menu-item">Услуги</li>
-        <li>Абонементы</li>
-        <li>Акции</li>
-        <li>Тренеры</li>
-        <li>Расписание</li>
+        <li class="footer__menu-item">Абонементы</li>
+        <li class="footer__menu-item">Акции</li>
+        <li class="footer__menu-item">Тренеры</li>
+        <li class="footer__menu-item">Расписание</li>
       </ul>
       <ul class="footer__social-list">
         <li class="footer__social-item">
-          <a href="https://vk.com/htmlacademy">
+          <a class="footer__social-vk" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Мы в ВК</span>
             <svg width="13" height="8">
               <use href="/__spritemap#sprite-vk"></use>
             </svg>
           </a>
         </li>
-        <li>
-          <a href="https://ok.ru/htmlacademy">
+        <li class="footer__social-item">
+          <a class="footer__social-ok" href="https://ok.ru/htmlacademy">
             <span class="visually-hidden">Мы в Одноклассниках</span>
             <svg width="10" height="17">
               <use href="/__spritemap#sprite-ok"></use>
             </svg>
           </a>
         </li>
-        <li>
-          <a href="https://www.reddit.com/user/HTMLAcademy/">
-            <span class="visually-hidden">Мы в Rabbit</span>
+        <li class="footer__social-item">
+          <a class="footer__social-raddit" href="https://www.reddit.com/user/HTMLAcademy/">
+            <span class="visually-hidden">Мы в Raddit</span>
             <svg width="15" height="15">
               <use href="/__spritemap#sprite-reddit"></use>
             </svg>

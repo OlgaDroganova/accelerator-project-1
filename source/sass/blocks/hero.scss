@@ -1,0 +1,67 @@
+.hero {
+  display: flex;
+  background: $main-gradient;
+  flex-direction: column;
+}
+
+.hero-header__logo-wrapper {
+  flex-direction: row;
+  display: flex;
+}
+
+.hero-header__logo {
+  display: flex;
+  align-self: center;
+  outline: 1px solid pink;
+  padding: 16px 40px 18px 15px;
+  margin: 0;
+}
+
+.hero-header__phone {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  padding: 16px 0;
+  padding-right: 15px;
+  min-width: 149px;
+  outline: 1px solid rgba(44, 253, 166, 0.533);
+}
+
+.hero-container {
+  background-image: url("../../img/hero-img-tab@1x.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.hero-title {
+  text-align: right;
+  color: #ffffff;
+}
+
+.hero-town {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.hero-list {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: right;
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  outline: 1px solid palegreen;
+  padding: 22px 90px;
+}

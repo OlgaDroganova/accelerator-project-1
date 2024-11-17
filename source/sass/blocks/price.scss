@@ -1,0 +1,53 @@
+.price {
+  background: $primary-bg;
+}
+
+.price-period__list,
+.price-list {
+  list-style: none;
+}
+
+.price-period__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.price-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.price-item__rubl {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  color: #103aae;
+}
+
+.price-item__shadow {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 120px;
+  text-align: center;
+  color: #e8e8e8;
+}
+
+.list-button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $base-color;
+  padding: 25px 42px;
+  outline: 2px solid $base-color;
+
+  &:focus {
+    background-color: aqua;
+  }
+}

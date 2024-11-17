@@ -1,0 +1,44 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее */
+body {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  color: $base-color;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 62px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 54px;
+  text-transform: uppercase;
+  color: $base-color;
+}
+
+h3 {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: $base-color;
+}
+
+p {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: $base-color;
+}

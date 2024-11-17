@@ -1,0 +1,24 @@
+.juri-title {
+  font-weight: 600px;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.juri-card {
+  position: relative;
+  width: 260px;
+}
+
+.juri-name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  outline: 1px solid royalblue;
+}

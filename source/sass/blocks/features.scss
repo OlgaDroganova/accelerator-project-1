@@ -1,0 +1,36 @@
+.features {
+  background: $primary-bg;
+}
+
+.features__list {
+  list-style: none;
+  text-align: center;
+}
+
+.features__item:nth-child(3) {
+  background: #1c3374;
+}
+
+.features__title {
+  text-transform: none;
+  line-height: 32px;
+  text-align: center;
+}
+
+.item-number {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  background: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.features__item:nth-child(3) span,
+.features__item:nth-child(3) h3,
+.features__item:nth-child(3) p {
+  -webkit-text-fill-color: #ffffff;
+  color: #ffffff;
+}
+
