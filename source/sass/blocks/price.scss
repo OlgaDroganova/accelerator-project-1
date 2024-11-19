@@ -13,6 +13,28 @@
   line-height: 16px;
 }
 
+.price-item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  &::after {
+    counter-increment: price-list;
+    content: counter(price-list);
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 120px;
+    text-align: center;
+    color: #e8e8e8;
+    z-index: -1;
+  }
+}
+
 .price-title {
   font-weight: 700;
   font-size: 22px;
