@@ -54,10 +54,14 @@
     </section>
     <section class="about" data-test="about">
       <div class="about-container container">
-        <h2>Тренажёрный зал</h2>
-        <h3>Просторный зал площадью 900 кв/м</h3>
-        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
-
+        <div class="about-container__wrapper">
+          <h2>Тренажёрный зал</h2>
+          <h3>Просторный зал площадью 900 кв/м</h3>
+          <div class="about__content">
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+        </div>
         <picture>
           <source type="image/webp" media="(min-width: 1366px)" srcset="img/main-img@1x.webp, img/main-img@2x.webp 2x" width="660" height="400">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/main-img-tab@1x.webp, img/main-img-tab@2x.webp 2x" width="678" height="345">
@@ -65,7 +69,7 @@
           <source type="image/jpeg" media="(min-width: 768px)" srcset="img/main-img-tab@1x.jpg, img/main-img-tab@2x.jpg 2x" width="678" height="345">
           <img src="img/main-img-m@1x.jpg" srcset="img/main-img-m@2x.jpg" width="320" height="280" alt="Тренажёрный зал">
         </picture>
-        <div class="about-container__video video">
+        <div class="about-container__video video-block">
           <iframe class="video" width="320" height="170" src="https://www.youtube.com/embed/9TZXsZItgdw?si=nSSL8qISxu2v_u6B" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
@@ -80,22 +84,19 @@
               <li class="price-item">
                 <h3 class="price-title">С тренером</h3>
                 <p class="price-description">12 занятий</p>
-                <span class="price-item__rubl">5000</span>
-                <!-- <span class="price-item__shadow" aria-hidden="true">5000</span> -->
+                <span class="price-item__rubl" data-shadow="5000">5000</span>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
               <li class="price-item">
                 <h3 class="price-title">Дневной</h3>
                 <p class="price-description">с 8:00 до 17:00</p>
-                <span class="price-item__rubl">1700</span>
-                <span class="price-item__shadow" aria-hidden="true">1700</span>
+                <span class="price-item__rubl" data-shadow="1700">1700</span>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
               <li class="price-item">
                 <h3 class="price-title">Полный день</h3>
                 <p class="price-description">с 8:00 до 22:00</p>
-                <span class="price-item__rubl">2700</span>
-                <span class="price-item__shadow" aria-hidden="true">2700</span>
+                <span class="price-item__rubl" data-shadow="2700">2700</span>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
             </ul>
@@ -106,22 +107,19 @@
               <li class="price-item">
                 <h3 class="price-title">С тренером</h3>
                 <p class="price-description">12 занятия</p>
-                <span class="price-item__rubl">30000</span>
-                <span class="price-item__shadow" aria-hidden="true">30000</span>
+                <span class="price-item__rubl" data-shadow="30000">30000</span>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
               <li class="price-item">
                 <h3 class="price-title">Дневной</h3>
                 <p class="price-description">с 8:00 до 17:00</p>
-                <span class="price-item__rubl">10200</span>
-                <span class="price-item__shadow" aria-hidden="true">10200</span>
+                <span class="price-item__rubl" data-shadow="10200">10200</span>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
               <li class="price-item">
                 <h3 class="price-title">Полный день</h3>
                 <p class="price-description">с 8:00 до 22:00</p>
-                <span class="price-item__rubl">16200</span>
-                <span class="price-item__shadow" aria-hidden="true">16200</span>
+                <span class="price-item__rubl" data-shadow="16200">16200</span>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
             </ul>
@@ -132,22 +130,19 @@
               <li class="price-item">
                 <h3 class="price-title">С тренером</h3>
                 <p class="price-description">12 занятия</p>
-                <span class="price-item__rubl">60000</span>
-                <span class="price-item__shadow" aria-hidden="true">60000</span>
+                <span class="price-item__rubl" data-shadow="60000">60000</span>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
               <li class="price-item">
                 <h3 class="price-title">Дневной</h3>
                 <p class="price-description">с 8:00 до 17:00</p>
-                <span class="price-item__rubl">20400</span>
-                <span class="price-item__shadow" aria-hidden="true">20400</span>
+                <span class="price-item__rubl" data-shadow="20400">20400</span>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
               <li class="price-item">
                 <h3 class="price-title">Полный день</h3>
                 <p class="price-description">с 8:00 до 22:00</p>
-                <span class="price-item__rubl">32400</span>
-                <span class="price-item__shadow" aria-hidden="true">32400</span>
+                <span class="price-item__rubl" data-shadow="32400">32400</span>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
             </ul>

@@ -2,10 +2,27 @@
   border: none;
 
   @media (min-width: $tablet-width) {
+    width: 270px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    height: 230px;
+  }
+}
+
+.video-block {
+  @media (min-width: $tablet-width) {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    top: 452px;
-    width: 271px;
+    top: 517px;
+    width: 270px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 376px;
+    width: 360px;
+    height: 230px;
   }
 }
