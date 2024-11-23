@@ -69,85 +69,142 @@
           <source type="image/jpeg" media="(min-width: 768px)" srcset="img/main-img-tab@1x.jpg, img/main-img-tab@2x.jpg 2x" width="678" height="345">
           <img src="img/main-img-m@1x.jpg" srcset="img/main-img-m@2x.jpg" width="320" height="280" alt="Тренажёрный зал">
         </picture>
+
         <div class="about-container__video video-block">
+
+          <!-- Промо ролик
           <iframe class="video" width="320" height="170" src="https://www.youtube.com/embed/9TZXsZItgdw?si=nSSL8qISxu2v_u6B" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          -->
+
         </div>
+
       </div>
     </section>
-    <section class="price price-period" data-test="price" id="subscription">
+    <section class="price price-period" data-test="price">
       <div class="price__container container">
         <h2>Абонементы</h2>
-        <ul class="price-period__list">
-          <li class="price-period__item price-period__activ">
-            <p class="price-period__title">1 месяц</p>
-            <ul class="price-list">
+        <div class="price__tab" data-tab="relative">
+          <ul class="price-period__list" data-tab="price-period">
+            <li class="price-period__item">
+              <button class="price-period__title price-period__activ" type="button">1 месяц</button>
+
+            </li>
+            <li class="price-period__item">
+              <button class="price-period__title" type="button">6 месяцев</button>
+
+            </li>
+            <li class="price-period__item">
+              <button class="price-period__title" type="button">12 месяцев</button>
+            </li>
+          </ul>
+          <div class="price__wrapper">
+            <ul class="price-list price-list__active" data-tab="content">
               <li class="price-item">
                 <h3 class="price-title">С тренером</h3>
                 <p class="price-description">12 занятий</p>
-                <span class="price-item__rubl" data-shadow="5000">5000</span>
+                <div class="price-item__block">
+                  <span class="price-item__rubl" data-shadow="5000">5000</span>
+                  <svg class="price__rub" width="24" height="33" viewBox="0 0 30 42">
+                    <use href="/__spritemap#sprite-rubl"></use>
+                  </svg>
+                </div>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
               <li class="price-item">
                 <h3 class="price-title">Дневной</h3>
                 <p class="price-description">с 8:00 до 17:00</p>
-                <span class="price-item__rubl" data-shadow="1700">1700</span>
+                <div class="price-item__block">
+                  <span class="price-item__rubl" data-shadow="1700">1700</span>
+                  <svg class="price__rub" width="24" height="33" viewBox="0 0 30 42">
+                    <use href="/__spritemap#sprite-rubl"></use>
+                  </svg>
+                </div>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
               <li class="price-item">
                 <h3 class="price-title">Полный день</h3>
                 <p class="price-description">с 8:00 до 22:00</p>
-                <span class="price-item__rubl" data-shadow="2700">2700</span>
+                <div class="price-item__block">
+                  <span class="price-item__rubl" data-shadow="2700">2700</span>
+                  <svg class="price__rub" width="24" height="33" viewBox="0 0 30 42">
+                    <use href="/__spritemap#sprite-rubl"></use>
+                  </svg>
+                </div>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
             </ul>
-          </li>
-          <li class="price-period__item">
-            <p class="price-period__title">6 месяцев</p>
-            <ul class="price-list">
+            <ul class="price-list" data-tab="content">
               <li class="price-item">
                 <h3 class="price-title">С тренером</h3>
                 <p class="price-description">12 занятия</p>
-                <span class="price-item__rubl" data-shadow="30000">30000</span>
+                <div class="price-item__block">
+                  <span class="price-item__rubl" data-shadow="30000">30000</span>
+                  <svg class="price__rub" width="24" height="33" viewBox="0 0 30 42">
+                    <use href="/__spritemap#sprite-rubl"></use>
+                  </svg>
+                </div>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
               <li class="price-item">
                 <h3 class="price-title">Дневной</h3>
                 <p class="price-description">с 8:00 до 17:00</p>
-                <span class="price-item__rubl" data-shadow="10200">10200</span>
+                <div class="price-item__block">
+                  <span class="price-item__rubl" data-shadow="10200">10200</span>
+                  <svg class="price__rub" width="24" height="33" viewBox="0 0 30 42">
+                    <use href="/__spritemap#sprite-rubl"></use>
+                  </svg>
+                </div>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
               <li class="price-item">
                 <h3 class="price-title">Полный день</h3>
                 <p class="price-description">с 8:00 до 22:00</p>
-                <span class="price-item__rubl" data-shadow="16200">16200</span>
+                <div class="price-item__block">
+                  <span class="price-item__rubl" data-shadow="16200">16200</span>
+                  <svg class="price__rub" width="24" height="33" viewBox="0 0 30 42">
+                    <use href="/__spritemap#sprite-rubl"></use>
+                  </svg>
+                </div>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
             </ul>
-          </li>
-          <li class="price-period__item">
-            <p class="price-period__title">12 месяцев</p>
-            <ul class="price-list">
+            <ul class="price-list" data-tab="content">
               <li class="price-item">
                 <h3 class="price-title">С тренером</h3>
                 <p class="price-description">12 занятия</p>
-                <span class="price-item__rubl" data-shadow="60000">60000</span>
+                <div class="price-item__block">
+                  <span class="price-item__rubl" data-shadow="60000">60000</span>
+                  <svg class="price__rub" width="24" height="33" viewBox="0 0 30 42">
+                    <use href="/__spritemap#sprite-rubl"></use>
+                  </svg>
+                </div>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
               <li class="price-item">
                 <h3 class="price-title">Дневной</h3>
                 <p class="price-description">с 8:00 до 17:00</p>
-                <span class="price-item__rubl" data-shadow="20400">20400</span>
+                <div class="price-item__block">
+                  <span class="price-item__rubl" data-shadow="20400">20400</span>
+                  <svg class="price__rub" width="24" height="33" viewBox="0 0 30 42">
+                    <use href="/__spritemap#sprite-rubl"></use>
+                  </svg>
+                </div>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
               <li class="price-item">
                 <h3 class="price-title">Полный день</h3>
                 <p class="price-description">с 8:00 до 22:00</p>
-                <span class="price-item__rubl" data-shadow="32400">32400</span>
+                <div class="price-item__block">
+                  <span class="price-item__rubl" data-shadow="32400">32400</span>
+                  <svg class="price__rub" width="24" height="33" viewBox="0 0 30 42">
+                    <use href="/__spritemap#sprite-rubl"></use>
+                  </svg>
+                </div>
                 <a class="list-button" href="#">Купить абонемент</a>
               </li>
             </ul>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
     <section class="games" data-test="games">
@@ -156,10 +213,14 @@
           <h2 class="games-title">SUPER GAMES</h2>
           <div class="games-info">
             <p class="games-text">Дата</p>
-            <p class="games-time">7</p>
-            <p class="games-month">Марта 2019</p>
+            <div class="games-time__wrapper">
+              <p class="games-time">7</p>
+              <p class="games-month">Марта 2019</p>
+            </div>
             <p class="games-text">Время</p>
-            <p class="games-time">12:00</p>
+            <div class="games-time__wrapper">
+              <p class="games-time">12:00</p>
+            </div>
           </div>
           <p class="games-description">Ежегодные соревнования по CrossFit</p>
           <a class="games-button button" href="#">заполнить заявку</a>
