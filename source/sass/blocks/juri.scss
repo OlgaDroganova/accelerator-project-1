@@ -1,8 +1,50 @@
+.juri__container {
+  padding-bottom: 53px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 66px;
+  }
+}
+
 .juri-title {
   font-weight: 600px;
   font-size: 32px;
   line-height: 32px;
   text-align: center;
+  margin: 0;
+  padding-top: 41px;
+  padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 54px;
+    padding-top: 29px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+  }
+}
+
+.juri-slider {
+  position: relative;
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 1160px;
+  }
+}
+
+.slider {
+  display: flex;
+  gap: 40px;
 }
 
 .juri-card {
@@ -17,8 +59,81 @@
   bottom: 10px;
   font-weight: 400;
   font-size: 22px;
-  line-height: 22px;
+  line-height: 21px;
   text-align: center;
   color: #ffffff;
-  outline: 1px solid royalblue;
+  width: max-content;
+
+  @media (min-width: $tablet-width) {
+    min-width: 260px;
+  }
+}
+
+.juri__prev-button {
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    width: 59px;
+    height: 100%;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    top: 50%;
+    left: -59px;
+    transform: translateY(-50%);
+    outline: 1px solid red;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 17px;
+    height: 32px;
+    top: 135px;
+    left: 5px;
+    transform: translateX(-50%);
+    background-image: url("/__spritemap#sprite-arrow-view");
+  }
+}
+
+.prev-button::after {
+  display: none;
+  transform: rotate(180deg);
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
+.juri__next-button {
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    width: 59px;
+    height: 100%;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    top: 50%;
+    right: -59px;
+    transform: translateY(-50%);
+    outline: 1px solid greenyellow;
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 17px;
+      height: 32px;
+      top: 150px;
+      right: 5px;
+      transform: translateY(-50%);
+      background-image: url("/__spritemap#sprite-arrow-view");
+    }
+  }
 }

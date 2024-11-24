@@ -2,8 +2,13 @@
   padding-top: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 59px;
-    padding-bottom: 61px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
@@ -23,8 +28,18 @@
     grid-template-columns: 100px 100px;
     column-gap: 20px;
     background-image: url("../../img/foto-games-tab@1x.jpg");
-    padding-bottom: 42px;
+    padding-bottom: 40px;
     background-size: 378px auto;
+    background-position: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 168px 95px;
+    column-gap: 77px;
+    padding: 60px 80px;
+    padding-bottom: 99px;
+    background-image: url("../../img/foto-games@1x.jpg");
+    background-size: 660px auto;
     background-position: right;
   }
 }
@@ -32,10 +47,15 @@
 .games-title {
   grid-area: 1/1/1/2;
   font-size: 48px;
-  line-height: 54px;
+  line-height: 53px;
   text-transform: uppercase;
   color: #ffffff;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 82px;
+    line-height: 96px;
+  }
 }
 
 .games-info {
@@ -62,7 +82,11 @@
     inset: 22px 0 0;
 
     @media (min-width: $tablet-width) {
-      inset: 25px 0 0;
+      inset: 24px 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      inset: 29px 0 0;
     }
   }
 
@@ -79,8 +103,13 @@
 
   @media (min-width: $tablet-width) {
     width: 80px;
-    padding-top: 5px;
-    padding-bottom: 8px;
+    padding-top: 4px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+    padding-bottom: 19px;
   }
 }
 
@@ -96,6 +125,13 @@
     font-size: 24px;
     line-height: 24px;
     padding-top: 9px;
+    padding-right: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 4px;
   }
 }
 
@@ -109,7 +145,13 @@
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
-    line-height: 24px;
+    line-height: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 3px;
   }
 }
 
@@ -122,7 +164,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 23px;
   }
 }
 
@@ -133,7 +175,11 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-    padding-top: 2px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 26px;
   }
 }
 
@@ -155,6 +201,12 @@
   @media (min-width: $tablet-width) {
     width: 136px;
     padding: 25px 40px;
-    margin-top: 12px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 256px;
+    margin-top: 33px;
   }
 }
