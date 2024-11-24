@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 42px;
+    line-height: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,11 +17,11 @@
 .about h3 {
   font-family: "Roboto", "Arial", sans-serif;
   margin-top: 11px;
-  letter-spacing: -0.1px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin-top: 24px;
+    line-height: 20px;
+    margin-top: 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,7 +32,6 @@
 }
 
 .about p {
-  letter-spacing: -0.01;
   margin-top: 36px;
   margin-bottom: 36px;
 
@@ -60,7 +60,7 @@
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 113px;
-    padding-top: 66px;
+    padding-top: 61px;
     display: flex;
     flex-direction: column;
   }

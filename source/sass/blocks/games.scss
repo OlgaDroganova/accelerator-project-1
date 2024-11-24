@@ -1,5 +1,10 @@
 .games {
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 59px;
+    padding-bottom: 61px;
+  }
 }
 
 .games__container {
@@ -13,6 +18,15 @@
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: bottom;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 100px 100px;
+    column-gap: 20px;
+    background-image: url("../../img/foto-games-tab@1x.jpg");
+    padding-bottom: 42px;
+    background-size: 378px auto;
+    background-position: right;
+  }
 }
 
 .games-title {
@@ -46,6 +60,15 @@
     background: #ffffff;
     height: 1px;
     inset: 22px 0 0;
+
+    @media (min-width: $tablet-width) {
+      inset: 25px 0 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -53,6 +76,27 @@
   display: flex;
   padding-top: 6px;
   padding-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+  }
+}
+
+.games-data {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ffffff;
+  padding-right: 4px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 9px;
+  }
 }
 
 .games-time {
@@ -62,6 +106,11 @@
   color: #ffffff;
   padding-right: 4px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .games-month {
@@ -70,11 +119,22 @@
   line-height: 12px;
   color: #ffffff;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .games-description {
   grid-area: 2/1/2/3;
   padding-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 2px;
+  }
 }
 
 .games-button {
@@ -86,8 +146,15 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   width: 126px;
   outline: 2px solid #ffffff;
   padding: 22px 40px;
   margin: 18px auto 0;
+
+  @media (min-width: $tablet-width) {
+    width: 136px;
+    padding: 25px 40px;
+    margin-top: 12px;
+  }
 }
