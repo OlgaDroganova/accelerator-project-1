@@ -50,13 +50,34 @@
 .juri-card {
   position: relative;
   width: 260px;
+  height: 300px;
+
+  &:hover {
+    .juri-card__content {
+      display: block;
+    }
+
+    .juri-name {
+      display: none;
+    }
+  }
+
+  &:focus {
+    .juri-card__content {
+      display: block;
+    }
+
+    .juri-name {
+      display: none;
+    }
+  }
 }
 
 .juri-name {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 10px;
+  bottom: 3px;
   font-weight: 400;
   font-size: 22px;
   line-height: 21px;
@@ -70,6 +91,8 @@
 }
 
 .juri__prev-button {
+  display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
     position: absolute;
@@ -83,7 +106,6 @@
     top: 50%;
     left: -59px;
     transform: translateY(-50%);
-    outline: 1px solid red;
   }
 
   &::after {
@@ -109,6 +131,8 @@
 }
 
 .juri__next-button {
+  display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
     position: absolute;
@@ -122,7 +146,6 @@
     top: 50%;
     right: -59px;
     transform: translateY(-50%);
-    outline: 1px solid greenyellow;
 
     &::after {
       position: absolute;
@@ -135,5 +158,72 @@
       transform: translateY(-50%);
       background-image: url("/__spritemap#sprite-arrow-view");
     }
+  }
+}
+
+.juri-card__content {
+  position: absolute;
+  display: none;
+  color: #ffffff;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 42px;
+  background-color: #10265489;
+  box-shadow: 0 0 35px #2a3b6317;
+  overflow: hidden;
+  text-align: center;
+
+  &:hover {
+    display: block;
+  }
+}
+
+.juri-card__content-title {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.juri-card__sub-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 300;
+  margin-bottom: 34px;
+}
+
+.juri-card__list {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  max-width: 160px;
+  margin: 0 auto;
+  margin-top: 34px;
+}
+
+.juri-card__item {
+  padding-left: 15px;
+  position: relative;
+  padding-bottom: 12px;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    left: 0;
+    top: 7px;
   }
 }

@@ -37,7 +37,7 @@
     grid-template-columns: 168px 95px;
     column-gap: 77px;
     padding: 60px 80px;
-    padding-bottom: 99px;
+    padding-bottom: 98px;
     background-image: url("../../img/foto-games@1x.jpg");
     background-size: 660px auto;
     background-position: right;
@@ -208,5 +208,9 @@
   @media (min-width: $desktop-width) {
     width: 256px;
     margin-top: 33px;
+  }
+
+  &:focus {
+    border: none;
   }
 }

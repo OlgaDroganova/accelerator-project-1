@@ -47,16 +47,16 @@
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
-  padding: 16px 0;
-  min-width: 149px;
+  padding: 14px 0;
+  min-width: 151px;
 
   @media (min-width: $tablet-width) {
-    padding: 31px 0;
+    padding: 29px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 30px;
-    padding-top: 34px;
+    padding-bottom: 27px;
+    padding-top: 31px;
   }
 }
 

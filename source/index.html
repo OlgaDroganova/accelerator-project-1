@@ -29,7 +29,7 @@
           </div>
           <div class="hero-header__phone phone">
             <span class="visually-hidden">Телефон горячей линии</span>
-            <a class="phone" href="tel:8800555-55-55">8 800 555-55-55</a>
+            <a class="phone-number" href="tel:8800555-55-55">8 800 555-55-55</a>
           </div>
         </div>
         <div class="hero-container">
@@ -71,6 +71,8 @@
         </picture>
 
         <div class="about-container__video video-block">
+          <a class="about-container__link visually-hidden" href="https://www.youtube.com/watch?v=9TZXsZItgdw">видо о нас</a>
+          <button class="about__play-button" type="button" aria-label="запустить видео"></button>
 
           <!-- Промо ролик
           <iframe class="video" width="320" height="170" src="https://www.youtube.com/embed/9TZXsZItgdw?si=nSSL8qISxu2v_u6B" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -83,7 +85,7 @@
     <section class="price price-period" data-test="price" id="subscription">
       <div class="price__container container">
         <h2>Абонементы</h2>
-        <div class="price__tab" data-tab="relative">
+        <div class="price__tab" data-tab="parent">
           <ul class="price-period__list" data-tab="price-period">
             <li class="price-period__item">
               <button class="price-period__title price-period__activ" type="button">1 месяц</button>
@@ -98,7 +100,7 @@
             </li>
           </ul>
           <div class="price__wrapper">
-            <ul class="price-list price-list__active" data-tab="content">
+            <ul class="price-list active" data-tab="content">
               <li class="price-item">
                 <h3 class="price-title">С тренером</h3>
                 <p class="price-description">12 занятий</p>
@@ -231,34 +233,83 @@
       <div class="juri__container container">
         <h2 class="juri-title">Жюри</h2>
         <div class="juri-slider">
-          <div class="slider">
-            <div class="juri-card">
-              <p class="juri-name">Анна Павлова</p>
-              <picture>
-                <source type="image/webp" srcset="img/card-ann@1x.webp, img/card-ann@2x.webp 2x" width="260" height="300">
-                <img class="juri-member" src="img/card-ann@1x.jpg" srcset="img/card-ann@2x.jpg" width="260" height="300" alt="Анна Павлова">
-              </picture>
-            </div>
-            <div class="juri-card">
-              <p class="juri-name">Алексей Лавров</p>
-              <picture>
-                <source type="image/webp" srcset="img/card-alex@1x.webp, img/card-alex@2x.webp 2x" width="260" height="300">
-                <img class="juri-member" src="img/card-alex@1x.jpg" srcset="img/card-alex@2x.jpg" width="260" height="300" alt="Алексей Лавров">
-              </picture>
-            </div>
-            <div class="juri-card">
-              <p class="juri-name">Александр Пашков</p>
-              <picture>
-                <source type="image/webp" srcset="img/card-alexandr@1x.webp, img/card-alexandr@2x.webp 2x" width="260" height="300">
-                <img class="juri-member" src="img/card-alexandr@1x.jpg" srcset="img/card-alexandr@2x.jpg" width="260" height="300" alt="Александр Пашков">
-              </picture>
-            </div>
-            <div class="juri-card">
-              <p class="juri-name">Мария Кетова</p>
-              <picture>
-                <source type="image/webp" srcset="img/card-mari@1x.webp, img/card-mari@2x.webp 2x" width="260" height="300">
-                <img class="juri-member" src="img/card-mari@1x.jpg" srcset="img/card-mari@2x.jpg" width="260" height="300" alt="Мария Кетова">
-              </picture>
+          <div class="swiper">
+            <div class="swiper-wrapper slider">
+              <div class="swiper-slide">
+                <div class="juri-card">
+                  <p class="juri-name">Анна Павлова</p>
+                  <picture>
+                    <source type="image/webp" srcset="img/card-ann@1x.webp, img/card-ann@2x.webp 2x" width="260" height="300" />
+                    <img class="juri-member" src="img/card-ann@1x.jpg" srcset="img/card-ann@2x.jpg" width="260" height="300" alt="Анна Павлова" />
+                  </picture>
+                  <div class="juri-card__content">
+                    <p class="juri-card__content-title">Анна Павлова</p>
+                    <span class="juri-card__sub-title">CrossFit</span>
+                    <ul class="juri-card__list">
+                      <li class="juri-card__item">Certified Level 3 Trainer</li>
+                      <li class="juri-card__item">Победитель чемпионата России по CrossFit</li>
+                      <li class="juri-card__item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="juri-card">
+                  <p class="juri-name">Алексей Лавров</p>
+                  <picture>
+                    <source type="image/webp" srcset="img/card-alex@1x.webp, img/card-alex@2x.webp 2x" width="260" height="300" />
+                    <img class="juri-member" src="img/card-alex@1x.jpg" srcset="img/card-alex@2x.jpg" width="260" height="300" alt="Алексей Лавров" />
+                  </picture>
+                  <div class="juri-card__content">
+                    <p class="juri-card__content-title">Алексей Лавров</p>
+                    <span class="juri-card__sub-title">CrossFit</span>
+                    <ul class="juri-card__list">
+                      <li class="juri-card__item">Certified Level 3 Trainer</li>
+                      <li class="juri-card__item">Победитель чемпионата России по CrossFit</li>
+                      <li class="juri-card__item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="juri-card">
+                  <p class="juri-name">Александр Пашков</p>
+                  <picture>
+                    <source type="image/webp" srcset="
+              img/card-alexandr@1x.webp,
+              img/card-alexandr@2x.webp 2x
+              " width="260" height="300" />
+                    <img class="juri-member" src="img/card-alexandr@1x.jpg" srcset="img/card-alexandr@2x.jpg" width="260" height="300" alt="Александр Пашков" />
+                  </picture>
+                  <div class="juri-card__content">
+                    <p class="juri-card__content-title">Александр Пашков</p>
+                    <span class="juri-card__sub-title">CrossFit</span>
+                    <ul class="juri-card__list">
+                      <li class="juri-card__item">Certified Level 3 Trainer</li>
+                      <li class="juri-card__item">Победитель чемпионата России по CrossFit</li>
+                      <li class="juri-card__item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="juri-card">
+                  <p class="juri-name">Мария Кетова</p>
+                  <picture>
+                    <source type="image/webp" srcset="img/card-mari@1x.webp, img/card-mari@2x.webp 2x" width="260" height="300" />
+                    <img class="juri-member" src="img/card-mari@1x.jpg" srcset="img/card-mari@2x.jpg" width="260" height="300" alt="Мария Кетова" />
+                  </picture>
+                  <div class="juri-card__content">
+                    <p class="juri-card__content-title">Мария Кетова</p>
+                    <span class="juri-card__sub-title">CrossFit</span>
+                    <ul class="juri-card__list">
+                      <li class="juri-card__item">Certified Level 3 Trainer</li>
+                      <li class="juri-card__item">Победитель чемпионата России по CrossFit</li>
+                      <li class="juri-card__item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <button class="juri__prev-button prev-button" type="button" aria-label="Посмотреть предыдущий слайд"></button>
@@ -316,15 +367,17 @@
             <a class="offers__button" href="#">подробнее</a>
           </div>
         </div>
-        <div class="offers__card card container">
-          <span class="card__title">Месяц бесплатно</span>
-          <p class="card__text">Приведи друга, получи абонемент в подарок</p>
-          <a class="card__button" href="#">подробнее</a>
-        </div>
-        <div class="offers__card card container">
-          <span class="card__title">Скидка 20%</span>
-          <p class="card__text">Корпоративный фитнес с командой</p>
-          <a class="card__button" href="#">подробнее</a>
+        <div class="offers__card-container">
+          <div class="offers__card card container">
+            <span class="card__title">Месяц бесплатно</span>
+            <p class="card__text">Приведи друга, получи абонемент в подарок</p>
+            <a class="card__button" href="#">подробнее</a>
+          </div>
+          <div class="offers__card card container">
+            <span class="card__title">Скидка 20%</span>
+            <p class="card__text">Корпоративный фитнес с командой</p>
+            <a class="card__button" href="#">подробнее</a>
+          </div>
         </div>
       </div>
     </section>
@@ -522,6 +575,7 @@
 		<use href="/__spritemap#sprite-user"></use>
 	</svg> -->
 
+  <script type="module" src="js/vendor.js"></script>
   <script type="module" src="js/main.js"></script>
 </body>
 

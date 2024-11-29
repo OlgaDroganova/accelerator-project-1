@@ -3,15 +3,22 @@
 }
 
 .faq__container h2 {
-  text-transform: capitalize;
   font-size: 32px;
   line-height: 32px;
   text-align: center;
+  margin: 0;
+  padding-top: 71px;
 }
 
 .faq__list {
-  display: flex;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 140px);
   list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 34px;
+  padding-bottom: 35px;
 }
 
 .faq__tab {
@@ -19,13 +26,19 @@
   font-size: 16px;
   line-height: 16px;
   text-align: center;
+  border: 1px solid #10265420;
+  background: transparent;
+  padding: 14px 22px;
+  min-width: 140px;
 }
 
 .faq__content-list {
   list-style: none;
+  padding: 0;
 }
 
 .faq__content-list h3 {
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   font-weight: 400;

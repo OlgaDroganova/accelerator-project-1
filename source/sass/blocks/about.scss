@@ -108,48 +108,112 @@
   padding: 0;
   margin-top: 29px;
 
-  &::after {
-    content: "";
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
-    position: absolute;
-    left: 50%;
-    top: 59px;
-    transform: translate(-50%);
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-right: 0;
+    background-image: image-set("../../img/video-tab@1x.jpg" 1x, "../../img/video-tab@2x.jpg" 2x);
   }
+
+  @media (min-width: $desktop-width) {
+    background-image: image-set("../../img/video@1x.jpg" 1x, "../../img/video@2x.jpg" 2x);
+  }
+}
+
+.about__play-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: none;
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  cursor: pointer;
+
 
   &::before {
     content: "";
+    display: block;
     width: 68px;
     height: 68px;
-    border: 2px solid #ed0233;
-    opacity: 50%;
+    border: 2px solid #ed023350;
     border-radius: 50%;
     background: none;
     position: absolute;
     left: 50%;
-    top: 49px;
-    transform: translate(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
-  @media (min-width: $tablet-width) {
-    margin-left: 0;
-    margin-right: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 13px;
+    height: 15px;
+    margin-left: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    mask-image: url("/__spritemap#sprite-play-video-view");
+    mask-repeat: no-repeat;
+    mask-size: 13px 15px;
   }
 
   @media (min-width: $desktop-width) {
-    &::after {
-      top: 79px;
-      width: 72px;
-      height: 72px;
-    }
+    width: 72px;
+    height: 72px;
 
     &::before {
-      top: 65px;
       width: 100px;
       height: 100px;
+    }
+  }
+
+
+  &:hover {
+    background: #ffffff;
+
+    &::before {
+      border-color: #10265460;
+    }
+
+    &::after {
+      background-color: #10265460;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    background: #c8c9cc;
+
+    &::before {
+      border-color: #102654;
+    }
+
+    &::after {
+      background-color: #102654;
+    }
+  }
+
+  &:active {
+    width: 42px;
+    height: 42px;
+    background-color: #ffffff;
+
+    &::before {
+      border-color: #102654;
+    }
+
+    &::after {
+      background-color: #102654;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 58px;
+      height: 58px;
     }
   }
 }
