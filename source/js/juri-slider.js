@@ -8,8 +8,8 @@ function swiperJs() {
     spaceBetween: 20,
     loop: true,
     navigation: {
-      nextEl: '.juri__next-button',
-      prevEl: '.juri__prev-button',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
     breakpoints: {
       768: {
