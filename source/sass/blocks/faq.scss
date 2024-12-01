@@ -2,6 +2,18 @@
   background: $primary-bg;
 }
 
+.faq__container {
+  padding-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 96px;
+  }
+}
+
 .faq__container h2 {
   font-size: 32px;
   line-height: 32px;

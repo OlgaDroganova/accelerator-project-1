@@ -1,11 +1,10 @@
 .price {
   padding-top: 14px;
-  padding-bottom: 100px;
   text-align: center;
   background: $primary-bg;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     background-image: url("../../img/Image-tab@1x.png");
     background-repeat: no-repeat;
     background-size: 403px 423px;
@@ -15,6 +14,7 @@
   @media (min-width: $desktop-width) {
     background-size: 470px 494px;
     background-position: 1063px 345px;
+    padding-bottom: 100px;
   }
 }
 
@@ -50,6 +50,7 @@
 .price-list {
   margin-top: 30px;
   display: none;
+  margin-bottom: 5px;
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -162,8 +163,12 @@
     width: 100%;
     height: 2px;
     background-color: #d10a42;
-    top: 30px;
+    top: 27px;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      top: 29px;
+    }
   }
 }
 
