@@ -86,9 +86,9 @@
       <div class="price__container container">
         <h2>Абонементы</h2>
         <div class="price__tab" data-tab="parent">
-          <ul class="price-period__list" data-tab="price-period">
+          <ul class="price-period__list" data-tab="navigation">
             <li class="price-period__item">
-              <button class="price-period__title price-period__activ" type="button">1 месяц</button>
+              <button class="price-period__title is-activ" type="button">1 месяц</button>
 
             </li>
             <li class="price-period__item">
@@ -100,7 +100,7 @@
             </li>
           </ul>
           <div class="price__wrapper">
-            <ul class="price-list active" data-tab="content">
+            <ul class="price-list is-active" data-tab="content">
               <li class="price-item">
                 <h3 class="price-title">С тренером</h3>
                 <p class="price-description">12 занятий</p>
@@ -384,88 +384,180 @@
     <section class="faq" data-test="faq">
       <div class="faq__container container">
         <h2>Вопросы и ответы</h2>
-        <ul class="faq__list">
-          <li class="faq__item">
-            <button class="faq__tab" onclick="openList(event, 'center')" type="button">Центр</button>
-          </li>
-          <li class="faq__item">
-            <button class="faq__tab" onclick="openList(event, 'subscriptions')" type="button">Абонемент</button>
-          </li>
-          <li class="faq__item">
-            <button class="faq__tab" onclick="openList(event, 'services')" type="button">Услуги</button>
-          </li>
-          <li class="faq__item">
-            <button class="faq__tab" onclick="openList(event, 'rules')" type="button">Правила</button>
-          </li>
-        </ul>
-        <ul class="faq__content-list" id="center">
-          <li class="faq__content-item">
-            <h3>Как стать членом фитнес-центра?</h3>
-            <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
-          </li>
-          <li class="faq__content-item">
-            <h3>Где можно посмотреть расписание?</h3>
-            <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
-          </li>
-          <li class="faq__content-item">
-            <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
-          </li>
-          <li class="faq__content-item">
-            <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
-          </li>
-        </ul>
-        <div>
-          <ul class="faq__content-list" id="subscriptions">
-            <li class="faq__content-item">
-              <h3>Занятия с тренером входят в абонемент?</h3>
-              <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+        <div class="faq__wrapper" data-tab="parent">
+          <ul class="faq__list" data-tab="navigation">
+            <li class="faq__item">
+              <button class="faq__tab is-active" type="button">Центр</button>
             </li>
-            <li class="faq__content-item">
-              <h3>Можно ли заморозить абонемент?</h3>
+            <li class="faq__item">
+              <button class="faq__tab" type="button">Абонемент</button>
             </li>
-            <li class="faq__content-item">
-              <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
+            <li class="faq__item">
+              <button class="faq__tab" type="button">Услуги</button>
             </li>
-            <li class="faq__content-item">
-              <h3>Что такое семейный доступ и доступ для друзей?</h3>
+            <li class="faq__item">
+              <button class="faq__tab" type="button">Правила</button>
             </li>
           </ul>
-        </div>
-        <div>
-          <ul class="faq__content-list" id="services">
-            <li class="faq__content-item">
-              <h3>Предлагает ли клуб услуги
-                по консультированию
-                по вопросам питания?</h3>
-              <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
-            </li>
-            <li class="faq__content-item">
-              <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
-            </li>
-            <li class="faq__content-item">
-              <h3>Можно ли приобрести в центре спортивное питание?</h3>
-            </li>
-            <li class="faq__content-item">
-              <h3>Есть ли в центре детская комната?</h3>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="faq__content-list" id="rules">
-            <li class="faq__content-item">
-              <h3>Есть в фитнес-центре дресс-код?</h3>
-              <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
-            </li>
-            <li class="faq__content-item">
-              <h3>Можно ли приводить с собой детей на тренировки?</h3>
-            </li>
-            <li class="faq__content-item">
-              <h3>Какие дополнительные правила посещения центра?</h3>
-            </li>
-            <li class="faq__content-item">
-              <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
-            </li>
-          </ul>
+          <div class="faq__content">
+            <ul class="faq__content-list is-active" data-tab="content">
+              <li class="faq__content-item active-accordion">
+                <div class="faq__question faq__question--small">
+                  <h3>Как стать членом фитнес-центра?</h3>
+                  <button class="faq__button" type="button" aria-label="открыть"></button>
+                </div>
+                <div class="faq__content-wrapper">
+                  <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+                </div>
+              </li>
+              <li class="faq__content-item">
+                <div class="faq__question">
+                  <h3>Где можно посмотреть расписание?</h3>
+                  <button class="faq__button" type="button" aria-label="открыть"></button>
+                </div>
+                <div class="faq__content-wrapper">
+                  <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
+                </div>
+              </li>
+              <li class="faq__content-item">
+                <div class="faq__question">
+                  <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
+                  <button class="faq__button" type="button" aria-label="открыть"></button>
+                </div>
+                <div class="faq__content-wrapper">
+                  <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
+                </div>
+              </li>
+              <li class="faq__content-item">
+                <div class="faq__question">
+                  <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
+                  <button class="faq__button" type="button" aria-label="открыть"></button>
+                </div>
+                <div class="faq__content-wrapper">
+                  <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="faq__content-list" data-tab="content">
+              <li class="faq__content-item">
+                <div class="faq__question active-accordion">
+                  <h3>Занятия с тренером входят в абонемент?</h3>
+                  <button class="faq__button" type="button" aria-label="открыть"></button>
+                </div>
+                <div class="faq__content-wrapper">
+                  <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                </div>
+              </li>
+              <li class="faq__content-item">
+                <div class="faq__question">
+                  <h3>Можно ли заморозить абонемент?</h3>
+                  <button class="faq__button" type="button" aria-label="открыть"></button>
+                </div>
+                <div class="faq__content-wrapper">
+                  <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                </div>
+              </li>
+              <li class="faq__content-item">
+                <div class="faq__question">
+                  <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
+                  <button class="faq__button" type="button" aria-label="открыть"></button>
+                </div>
+                <div class="faq__content-wrapper">
+                  <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                </div>
+              </li>
+              <li class="faq__content-item">
+                <div class="faq__question">
+                  <h3>Что такое семейный доступ и доступ для друзей?</h3>
+                  <button class="faq__button" type="button" aria-label="открыть"></button>
+                </div>
+                <div class="faq__content-wrapper">
+                  <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="faq__content-list" data-tab="content">
+              <li class="faq__content-item active-accordion">
+                <div class="faq__question">
+                  <h3>Предлагает ли клуб услуги
+                    по консультированию
+                    по вопросам питания?</h3>
+                  <button class="faq__button" type="button" aria-label="открыть"></button>
+                </div>
+                <div class="faq__content-wrapper">
+                  <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
+                </div>
+              </li>
+              <li class="faq__content-item">
+                <div class="faq__question">
+                  <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
+                  <button class="faq__button" type="button" aria-label="открыть"></button>
+                </div>
+                <div class="faq__content-wrapper">
+                  <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
+                </div>
+              </li>
+              <li class="faq__content-item">
+                <div class="faq__question">
+                  <h3>Можно ли приобрести в центре спортивное питание?</h3>
+                  <button class="faq__button" type="button" aria-label="открыть"></button>
+                </div>
+                <div class="faq__content-wrapper">
+                  <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
+                </div>
+              </li>
+              <li class="faq__content-item">
+                <div class="faq__question">
+                  <h3>Есть ли в центре детская комната?</h3>
+                  <button class="faq__button" type="button" aria-label="открыть"></button>
+                </div>
+                <div class="faq__content-wrapper">
+                  <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="faq__content-list" data-tab="content">
+              <li class="faq__content-item active-accordion">
+                <div class="faq__question">
+                  <h3>Есть в фитнес-центре дресс-код?</h3>
+                  <button class="faq__button" type="button" aria-label="открыть"></button>
+                </div>
+                <div class="faq__content-wrapper">
+                  <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
+                </div>
+              </li>
+              <li class="faq__content-item">
+                <div class="faq__question">
+                  <h3>Можно ли приводить с собой детей на тренировки?</h3>
+                  <button class="faq__button" type="button" aria-label="открыть"></button>
+                </div>
+                <div class="faq__content-wrapper">
+                  <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
+                </div>
+              </li>
+              <li class="faq__content-item">
+                <div class="faq__question">
+                  <h3>Какие дополнительные правила посещения центра?</h3>
+                  <button class="faq__button" type="button" aria-label="открыть"></button>
+                </div>
+                <div class="faq__content-wrapper">
+                  <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
+                </div>
+              </li>
+              <li class="faq__content-item">
+                <div class="faq__question">
+                  <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
+                  <button class="faq__button" type="button" aria-label="открыть"></button>
+                </div>
+                <div class="faq__content-wrapper">
+                  <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

@@ -49,14 +49,19 @@
 
 .price-list {
   margin-top: 30px;
+  display: none;
 
   @media (min-width: $desktop-width) {
-    display: grid;
+    display: none;
     gap: 40px;
     grid-template-columns: repeat(3, 360px);
     width: 360px;
     margin: 0;
   }
+}
+
+.price-list.is-active {
+  display: grid;
 }
 
 .price-period__list {
@@ -145,6 +150,20 @@
       top: 30px;
       left: 0;
     }
+  }
+}
+
+.price-period__title.is-active {
+  color: #102654;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #d10a42;
+    top: 30px;
+    left: 0;
   }
 }
 
