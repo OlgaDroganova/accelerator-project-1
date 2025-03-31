@@ -2,6 +2,15 @@
   display: flex;
   background: $main-gradient;
   flex-direction: column;
+  padding-top: 54px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 86px;
+  }
 }
 
 .hero-container__wrapper {
@@ -21,6 +30,7 @@
 }
 
 .hero-header {
+  position: absolute;
   flex-direction: row;
   display: flex;
   min-width: 290px;
@@ -29,6 +39,10 @@
   @media (min-width: $tablet-width) {
     min-width: 678px;
     grid-area: 1/1/2/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1160px;
   }
 }
 
@@ -99,7 +113,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 92px;
+    font-size: 93px;
     line-height: 110px;
     letter-spacing: 0.04em;
     width: 270px;
@@ -108,7 +122,7 @@
 
 .hero-town {
   grid-area: 1/2/2/3;
-  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", serif;
   font-weight: 600;
   font-size: 32px;
   line-height: 32px;
@@ -152,6 +166,7 @@
   @media (min-width: $desktop-width) {
     align-self: center;
     padding-bottom: 26px;
+    margin-top: 145px;
   }
 }
 

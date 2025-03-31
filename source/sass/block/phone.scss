@@ -22,7 +22,8 @@
   }
 
   &--disabled {
-    color: #f8f9fc50;
+    color: #f8f9fc;
+    opacity: 0.5;
   }
 
   @media (min-width: $tablet-width) {

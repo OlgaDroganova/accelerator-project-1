@@ -88,6 +88,21 @@
     line-height: 18px;
     min-width: 260px;
   }
+
+  &:hover {
+    border: 1px solid #102654;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid #102654;
+    background: #ffffff;
+  }
+
+  &:disabled {
+    border: 1px solid #c8c9cc;
+    color: #c8c9cc;
+  }
 }
 
 .faq__tab.is-active {
